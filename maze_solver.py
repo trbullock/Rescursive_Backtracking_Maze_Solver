@@ -175,5 +175,12 @@ and the maze solver will only go back to the most recent intersection (the end o
 
 this branches list will not be recursive in and of itself, but it will allow for storing the needed data
 
+for example, the recursive function would look like this
+- get possible moves list []
+- sets branches [0] -> with all the data for the intersection -> (It's not an intersection if it only has 1 option) (else every space would be an intersection)
+- try move[0]
+- it then calls itself again, saving the intersection 
+- this goes until solved or blocked -> if it is blocked, it will call a reset, which sets position using pathwayBack, then it will try same funciton of move[1] 
+
 
              """
