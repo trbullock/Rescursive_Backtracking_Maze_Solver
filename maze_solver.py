@@ -11,7 +11,7 @@ task4 -> make DO() and UNDO() functions
 recursive logic -> getpossible moves () -> this returns an array ['e','w','s','n'] -> this function contains isWall() checks
 - does it need to save it's position as an intersection? 
 for example, would Grid class have an array that gets modified called branches that says, 
-[possible outcomes['e','w','s','n'],and then moves tried[[e], pathwayBack['e,'e','w']
+[possible outcomes['e','w','s','n'],and then moves tried[[e], pathwayBack['e,'e','w'] each of these sub list represents a previous intersection
 (this would get added to every time a move happens)] -> that way, if it for sure fails, it will go back to the intersection and then try
 the next posible outcome. branches will contains all the intersections, 
 and the maze solver will only go back to the most recent intersection (the end of the list)
